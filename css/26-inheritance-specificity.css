@@ -1,4 +1,32 @@
 body {
   font-family: "SUIT";
-  font-weight: 300;
+  font-weight: 700;
+}
+/* 보더는 상속받지 않는 것 */
+.menu{
+  color: gray;
+  font-size: 36px;
+  border: 5px dashed green;
+}
+
+/* !important를 사용하면 무조건 가장 우선순위  우성순위 확인용으로만 사용하자 */
+.menu li{
+  background-color: pink ;
+}
+
+
+.pick{
+  background-color: yellow;
+}
+
+/* 한줄한줄 보더 적용 */
+/* 
+.menu li {
+  border: inherit;
+}
+ */
+
+/* 위의 방식보다 아래의 방식이 더 좋다 더 간결할수록 알아보기 쉽다 */
+.menu a{
+  color: inherit;
 }
