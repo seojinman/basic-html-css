@@ -5,10 +5,17 @@
 * {
   color: inherit;
 }
+
+/* 가상 요소 선택자 */
+/* 글씨를 드래그 하면 배경과 글씨의 색이 변한다. */
+::selection {
+  background: #373e6a;
+  color: hotpink;
+}
+
 /* 요소(태크) 선택자 */
 body {
   font-family: "SUIT";
-  margin: 0;
   font-weight: 300;
   background-color: black;
   color: hsla(110, 100%, 100%, 1)
@@ -19,13 +26,49 @@ body {
   text-shadow: 4px 4px 3px #77f;
 }
 
+.align{
+  text-align: center;
+}
+
 ul.menu {
   margin: 0;
   padding-left: 0;
-  color: #f00;
+  color: #0f0;
 }
 
 /* 아이디 선택자 */
 #demo {
   border: red 5px solid;
+}
+
+/* 속성 선택자 */
+.menu a[href$=".html"] {
+  background-color: blue;
+}
+
+/* 선택자 목록 */
+.fancy, .menu{
+  font-size: 24px;
+}
+
+/* 가상요소 선택자 */
+.align::before{
+  content: "이전 요소";
+}
+.align::after{
+  content: "다음 요소";
+}
+
+/* 가상 클래스 */
+/* html 에서는 0부터 시작 css 에서는 1부터 시작.. */
+.menu li:nth-child(odd){
+  color: yellow;
+}
+
+.menu a:hover{
+  border: 5px, solid orange;
+}
+
+h1.menu:hover, h1.menu:focus{
+ background-color: gold;
 }
