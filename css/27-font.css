@@ -1,14 +1,28 @@
-body {
-  font-family: "SUIT";
+/* 디버깅의 컴퓨티드를 사용하여 항상 확인하여야한다. */
+html{
+  font-size: 0.625px;
+}
+
+body{
+  font-size: 1.5rem;
+  font-family:'Noto Sans KR',sans-serif;
   font-weight: 300;
 }
 
-ul {
-  border: 1px solid #aaa;
-  height: 1000px;
-  background-repeat: no-repeat;
-  background-image: url("../images/sun.png"), url("../images/cloud.png"),
-    url("../images/tree.png");
-  background-size: 100px 100px, 450px 150px, 350px 600px;
-  background-position: 250px 0, 200px 0, 0 0;
+h1{
+  font-size: 3em;
 }
+
+/* em 단위와 100분율은 같다  */
+
+p{
+  /* 폰트 크기 */
+  font-size: 20px;
+  /* 줄의간격 */
+  line-height: 1.5;
+  /* 글자의 굵기 */
+  font-weight: 100;
+
+}
+
+/* 글씨의 크기는 상속받는다 px, em  */
